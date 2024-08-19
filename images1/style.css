@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/utt.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: #0a9d00;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: #f1620f;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+    color: #f9fafc;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/EDIFICIO.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    text-align: center;
+    color: green;
+}
+
+.content {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background:cover;
+    border-radius: 10px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #f1620f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .menu-icono {
+        display: block;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+    
+    #menu:checked + label + .navbar ul {
+        display: flex;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    
+    .header-content h1 {
+        font-size: 40px;
+    }
+    
+    .services {
+        padding: 50px 0;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    .login-box {
+        padding: 10px;
+    }
+}

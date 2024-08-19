@@ -1,0 +1,68 @@
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/EDIFICIO.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(0, 255, 0);
+}
+
+.contenedor {
+	width: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: cover ;
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #4eee0f;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.grafica {
+	margin-bottom: 30px;
+}
+
+.barra {
+	height: 35px;
+	background-color: #06ff0e;
+	border-radius: 100px;
+	transition: width 0.5s ease-in-out;
+}
+
+.texto {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#barra-velocidad {
+	background-color: #24ec2a;
+}
+
+#barra-ping {
+	background-color: #ff9800;
+}
+
+.boton-volver {
+	margin-top: 20px;
+}
+
+.boton-volver button {
+	background-color: #24ec2a;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.boton-volver button:hover {
+	background-color: #ff9800;
+}

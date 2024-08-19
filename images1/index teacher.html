@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleadmin.css">
+    <style>
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .partners {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .partners .logo a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .partners .logo a:hover {
+            color: #17a2b8;
+        }
+
+        .footer {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer .menu-footer a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .footer .menu-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .copyright {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- Agregar id="home" para identificar el inicio -->
+<header class="header" id="home">
+    <div class="menu container">
+        <label for="menu">
+            <img src="images/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#usuarios_conectados">Usuarios Conectados</a></li> <!-- Enlace al identificador -->
+                <li><a href="index2teacher.html">Velocidad de Red</a></li>
+            </ul>
+        </nav>
+        <!-- Botón "Finalizar Sesión" en la parte superior izquierda -->
+        <form method="POST" action="logout.php" class="logout-form">
+            <button type="submit" class="btn-secondary">Finalizar Sesión</button>
+        </form>
+    </div>
+</header>
+
+<section class="coffee" id="usuarios_conectados"> <!-- Agregar id a la sección -->
+    <div class="coffee-content container">
+        <h2>Usuarios Conectados</h2>
+        
+        <!-- Incluir el archivo PHP usando un iframe -->
+        <iframe src="usuarios_conectados.php" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+       
+    </div>
+</section>
+
+<footer>
+    <section class="partners parallax-background-partners" id="partners">
+        <div class="opacity"></div>
+        <div class="content">
+            <h2 class="text-center">Gracias</h2>
+            <div class="logo text-center">
+                <a href="https://www.facebook.com/UniversidadTecnologicadeTlaxcala?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a> <!-- Facebook icon -->
+                <a href="https://www.uttlaxcala.edu.mx/"><i class="bi bi-globe"></i></a> <!-- Website icon -->
+                <a href="https://www.instagram.com/ut_tlaxcala?igsh=YXdqOWRib281cnQy"><i class="bi bi-instagram"></i></a> <!-- Instagram icon -->
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="margin">
+            <div class="menu-footer">
+                <a href="#home">Inicio</a> <!-- Enlace al inicio de la página -->
+                <a href="terminos.html">Terminos y condiciones</a>
+            </div>
+            <div class="copyright">Universidad Tecnologica de Tlaxcala</div>
+        </div>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

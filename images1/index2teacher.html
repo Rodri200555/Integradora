@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Velocímetro de Internet</title>
+	<link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Velocidad</h1>
+		<div class="grafica">
+			<div class="barra" id="barra-velocidad"></div>
+			<div class="texto">Velocidad: <span id="velocidad">0</span> Mbps</div>
+		</div>
+		<div class="grafica">
+			<div class="barra" id="barra-ping"></div>
+			<div class="texto">Ping: <span id="ping">0</span> ms</div>
+		</div>
+		<!-- Botón para volver -->
+		<div class="boton-volver">
+			<button onclick="window.location.href='index teacher.html'">Volver</button>
+		</div>
+	</div>
+	<script src="velocimetro.js"></script>
+</body>
+</html>
